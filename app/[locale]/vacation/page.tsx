@@ -1,5 +1,4 @@
 "use client";
-import { useLocale } from "@/components/locale-provider";
 import { CiLocationOn } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import { useEffect, useState } from "react";
@@ -30,7 +29,6 @@ export default function NewsPage({ params }: { params: { locale: string } }) {
       console.error(error);
     }
   }
-
   async function searchData(title: any) {
     try {
       let res = await fetch(
@@ -47,7 +45,7 @@ export default function NewsPage({ params }: { params: { locale: string } }) {
   }, []);
   return (
     <div>
-      <div className="flex sam max-w-375 m-auto gap-6 justify-between">
+      <div className="flex sam pt-6 max-w-300 m-auto gap-6 justify-between">
         <div className="w-86 flex flex-col gap-2">
           <h1 className="text-xl">Регионы</h1>
           <select onChange={(e) => sortData(e.target.value)} className="rounded-md text-gray-600 dark:text-white border px-3 py-2 text-sm">
@@ -67,13 +65,13 @@ export default function NewsPage({ params }: { params: { locale: string } }) {
               type="text"
               onChange={(e) => searchData(e.target.value)}
               placeholder="Search..."
-              className="w-[780px] rounded-3xl px-6 py-4 bg-[#F4F4F5] placeholder:text-[#8D8BA7]"
+              className="w-[780px] dark:bg-black dark:border dark:border-gray-400 rounded-3xl px-6 py-4 bg-[#F4F4F5] placeholder:text-[#8D8BA7]"
             />
             <button className="px-6 py-4 bg-[#FFA900] rounded-2xl text-white">
               <CiSearch />
             </button>
           </div>
-          {data.map((e: any) => (
+          {Array.isArray(data) && data?.map((e: any) => (
             <div
               className="border border-[#E5E7EB] cartjon rounded w-[880px] h-[244px] px-[28px] py-[24px]"
               key={e.id}
