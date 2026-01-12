@@ -1,0 +1,28 @@
+{
+  "nav1":"About us",
+  "nav2":"Cover card",
+  "nav3":"Infostructure",
+  "nav4":"Partners",
+  "nav5":"News",
+  "nav6":"Jobs",
+  "img1":"/1.png",
+  "img2":"/2.png",
+  "img3":"/3.png",
+  "about":"We are a leading trading and distribution company specializing in the import and sale of a wide range of goods throughout Tajikistan.",
+  "home":"Home"
+  ,
+  "valuesTitle": "Values",
+  "valuesText": "A commitment to quality service, building customer trust and continuous development. We are proud of our reputation as a reliable partner that helps make the best products accessible to businesses and people across Tajikistan.",
+  "goalsTitle": "Goals",
+  "goal1": "Open a regional distribution center in GBAO",
+  "goal2": "Expand the product portfolio",
+  "goal3": "Improve customer service",
+  "companyIntro": "Leading trade and distribution company."
+  ,
+  "newsTitle": "News",
+  "newsText": "CAPITAL-T is one of the largest distribution companies in the Republic of Tajikistan, engaged in wholesale trade and distribution of food products, perfumes and cosmetics, hygiene products, etc. Since 2000, the company LLC CAPITAL-T. The company began to develop dynamically, new partnerships were established, the number of clients grew, the company's material and technical base was improved, and the software was refined."
+  ,
+  "cardTitle": "Title",
+  "cardDesc": "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
+  "readMore": "Read more >"
+}
